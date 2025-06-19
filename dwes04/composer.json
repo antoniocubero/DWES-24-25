@@ -1,0 +1,21 @@
+{
+    "name": "antonio/dwes04",
+    "description": "Tarea 04 DWES",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "DWES04\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonio",
+            "email": "cubero_111@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "smarty/smarty": "4.5.5"
+    }
+}

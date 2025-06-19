@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+nav{
+    padding: 10px 30px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgray;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+nav ul li{
+    margin: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+section{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    background-color: lightcyan;
+    margin-top: 30px;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table tr:nth-child(even){
+    background-color: rgb(207, 237, 248);
+}
+
+
+table tr td{
+    padding: 10px;
+}
+table tr th{
+    background-color: lightgrey ;
+    padding: 10px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 600px;
+}
+
+form label{
+    margin: 10px 5px;
+    text-align: right;
+}
+
+form input, form textarea, form select{
+    grid-column: 2/5;
+    margin: 10px 0;
+}
+
+form p{
+    grid-column: 2;
+}
+
+form input[type="submit"]{
+    grid-column: 2/4;
+}
+
+table form{
+    grid-template-columns: 1fr;
+    width: auto;
+}
+
+table form input{
+    grid-column: auto;
+}
+
+table form input[type="submit"]{
+    grid-column: auto;
+}

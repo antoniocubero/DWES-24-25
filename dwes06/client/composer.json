@@ -1,0 +1,21 @@
+{
+    "name": "antonio/client",
+    "description": "Tarea 06 DWES",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "guzzlehttp/guzzle": "8.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "DWES06\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonio",
+            "email": "cubero_111@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
